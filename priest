@@ -1,1 +1,22 @@
-Priest
+import java.util.*;
+/**
+ * Class Priest - a NPC that the player can find in the church.
+ * He is able to pray to full the mana of the player for free.
+ * This class is part of the "Legend of Zuul" .
+ *
+ * @author  Laure Baudoin
+ * @version 2018.11.14
+ */
+public class Priest extends NPC
+{
+    /**Creates a Priest */
+    public Priest()
+    {
+    }
+
+    /**The priest prays to restore all the mana of the player
+    It happens even if the mana is already full*/
+    public void pray()
+    {
+    }
+}
