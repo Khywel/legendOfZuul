@@ -1,60 +1,60 @@
 import java.util.*;
 /**
-*Class Inner
-* An Inner is a kind of NPC. The inners allow to the player to relax by selling a night in the inn and selling some food or poison.
+ *Class Inner
+ * An Inner is a kind of NPC. The inners allow to the player to relax by selling a night in the inn and selling some food or poison.
 The player must pay in coins.
 
-* This class is part of the "Legend of Zuul" .
-* @author  Charlotte Bey
-* @version 2018.11.14
-*/
+ * This class is part of the "Legend of Zuul" .
+ * @author  Charlotte Bey
+ * @version 2018.11.14
+ */
 
 public class Inner extends Merchant
 {
-      private List<Item> items = new ArrayList <Item>();
+    private List<Item> items = new ArrayList <Item>();
 
-      }
+    /**
+     * Constructor Inner
+     * @Item arraylist is empty when the inner is created
+     */
+    public Inner (String name)
+    {
+        super(name);
+    }
 
-      /**
-       * Constructor Inner
-       * @Item arraylist is empty when the inner is created
-       */
-      public Inner (String name)
-      {
-            super(name);
-      }
+    /**
+     * Method which allows to add an object in the Inner's list.
+    The method checks if the item can be sold. And if he can be only sold by the inner (food or poison).
+     */
+    public boolean addItemToInner (Item object)
+    {
+        return true;
+    }
 
-      /**
-      * Method which allows to add an object in the Inner's list.
-      The method checks if the item can be sold. And if he can be only sold by the inner (food or poison).
-      */
-      public boolean addItemToInner (Item object)
-      {
-      }
+    /**  setInfoObject
+     * Display a menu to allow the player to choose what he wants to buy.
+     * Set an ID, the name of each object he is able to sell and its value next.
+     * One line for each object.
+     * The last line gives the option to quit without buy anything.
+     */
+    public void displayObjectsAndValues ()
+    {
+    }
 
-      /**  setInfoObject
-      * Display a menu to allow the player to choose what he wants to buy.
-      * Set an ID, the name of each object he is able to sell and its value next.
-      * One line for each object.
-      * The last line gives the option to quit without buy anything.
-      */
-      public void displayObjectsAndValues ()
-      {
-      }
+    /** process of the player's choice
+     * Verify if the ID is correct.
+     *If it is correct, it will check if the player has enough money.
+     */
+    public boolean checkPlayerChoice (int ID)
+    {
+        return true;
+    }
 
-      /** process of the player's choice
-      * Verify if the ID is correct.
-      *If it is correct, it will check if the player has enough money.
-      */
-      public boolean checkPlayerChoice (int ID)
-      {
-      }
-
-      /** restaure the player's HP
-      * If the player sleeps in the inn, the night will restaure his XPmax
-      *If he stays one night, he get his HPmax
-      */
-      public int addHP()
-      {
-      }
+    /** restaure the player's HP
+     * If the player sleeps in the inn, the night will restaure his XPmax
+     *If he stays one night, he get his HPmax
+     */
+    public void addHP()
+    {
+    }
 }
