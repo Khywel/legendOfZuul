@@ -12,16 +12,31 @@ import java.util.*;
 public class Weapon extends Item
 {
     private int damage;
-    private Enemy FortEnemy;
+    private Enemy fortEnemy;
     private boolean magic;
 
     /**
      * Constructor Weapon
-     *
      */
-    public Weapon(int damage, Enemy FortEnemy, boolean magic)
+    public Weapon(int damage, Enemy fortEnemy, boolean magic)
     {
       super();
+    }
+
+    /** getDamage is a method which gives the damage of the weapon
+     */
+    public int getDamage()
+    {          return damage;
+    }
+    /** getFortEnemy is a method which gives the damage up specific against specific enemy
+     */
+    public int getFortEnemy()
+    {          return fortEnemy;
+    }
+    /** getMagic is a method which specify if the weapon deals physical or magical damage
+     */
+    public int getMagic()
+    {          return magic;
     }
 
 
