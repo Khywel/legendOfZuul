@@ -19,9 +19,9 @@ public class Food extends Item
      *
      * @param : Name, Cost, Salable, RestauredHP, RestauredMana, Poison
      */
-    public Food(int RestauredHP, int RestauredMana, int Poison)
+    public Food(int RestauredHP, int RestauredMana, int Poison, String itemName, int price, boolean saleable)
     {
-        super();
+        super(itemName, price, saleable);
         this.RestauredHP = RestauredHP;
         this.RestauredMana = RestauredMana; 
         this.Poison = Poison;
