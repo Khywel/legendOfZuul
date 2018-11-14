@@ -1,25 +1,88 @@
 /**
- *  This class give all the commun attribute between PNJ, ennemy and player
- *
+ *  This class give all the common attribute between PNJ, enemy, and player 
+ *  There is also all the common functionality of these classes.
  *
  *  This class is part of the "Legend of Zuul".
  * @author  Driss
- * @version 14.11.2018
+ * @version 14.11.2018 
  */
 
 public class Actor
 {
-    int strength = 0;
-    int mana = 0;
-    int dexterity = 0;
-    int agility = 0;
-    int intelligence = 0;
-    int charisma = 0;
-    int speed = 0;
-    String name;
-
-    public Actor(String name, ) {
-
+    private int strength = 0;
+    private int hp = 15;
+    private int mana = 0;
+    private int agility = 0;
+    private int intelligence = 0;
+    private int charisma = 0;
+    private  int speed = 1;
+    private String name;
+    /**
+    * Create the actor 
+    * @param name : name of the actor 
+    */
+    public Actor(String name) {
 
     } 
+
+    /**
+    * @return The description of the Actor.
+    */
+    public return getInformation (String name){
+      
+    }
+    
+    /**
+    * @return the number of points of strength.
+    */
+    public int getStrength (){
+      
+    }
+    
+    /**
+    * @return the number of the hp.
+    */
+    public int getHp (){
+      
+    }
+
+    
+    /**
+    * @return the number of the mana.
+    */
+    public int mana (){
+      
+    }
+
+    
+    /**
+    * @return the number of points of the agility.
+    */
+    public int getAgility (){
+      
+    }
+
+    
+    /**
+    * @return the number of points of the intelligence.
+    */
+    public int getIntelligence (){
+      
+    }
+
+
+    /**
+    * @return the number of points of the charisma.
+    */
+    public int getCharisma (){
+      
+    }
+
+    /**
+    * @return the number of points of speed.
+    */
+    public int getSpeed (){
+      
+    }
 }
+
