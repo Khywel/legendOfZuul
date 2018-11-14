@@ -30,41 +30,46 @@ public class Potion extends Food
 
     /** getcharisma is a method which gives how many
      *  charisma points is given by the potion.
+     * @return Charisma
      */
     public int getCharisma()
     {
-      return Charisma;
+      return int;
     }
 
     /** getStrenght is a method which gives how many
      *  strenght points is given by this potion.
+     * @return : Strenght
      */
     public int getStrenght()
     {
-      return Strenght;
+      return int;
     }
 
     /** getAgility is a method which gives how many
      *  agility points is given by this potion.
+     * @return : Agility
      */
     public int getAgility()
     {
-      return Agility;
+      return int;
     }
 
     /** getIntelligence is a method which gives how many
      *  Intelligence points is given by this potion.
+     * @return : Intelligence
      */
     public int getIntelligence()
     {
-      return Intelligence;
+      return int;
     }
 
     /** getSpeed is a method which gives how many
      *  speed points is given by this potion.
+     * @return : Speed
      */
     public int getSpeed()
     {
-      return Speed;
+      return int;
     }
   }
