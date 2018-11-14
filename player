@@ -33,6 +33,7 @@ public class Player extends Actor
       boolean visible = true;
       boolean HavreSac = false;
       Place currentPlace = Village;
+      this.sex = sex;
 
       race = aRace;
       classes = aClass;
