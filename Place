@@ -13,13 +13,13 @@ public class Place
     private String description;
     private NPC npc; 
     private HashMap<String, Place> placeExits;
-    private String name;
+
     /**
     * The constructor of the class place
     * create a described "description" for places
     */
     public Place(String description) {
-
+        this.description = description; 
     }  
 
     /*
