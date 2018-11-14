@@ -35,7 +35,7 @@ public class Player extends Actor
       Place currentPlace = Village;
 
       race = aRace;
-      class = aClass;
+      classes = aClass;
       super();
     }
 
