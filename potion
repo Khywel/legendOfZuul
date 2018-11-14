@@ -10,7 +10,7 @@ import java.util.*;
  */
 public class Potion extends Food
 {
-    protected int Charism;
+    protected int Charisma;
     protected int Strenght;
     protected int Agility;
     protected int Intelligence;
@@ -23,9 +23,14 @@ public class Potion extends Food
      * of the attributes point is negative
      * @param : Charisma, Strenght, Agility, Intelligence,Speed
      */
-    public Potion(int Charisma, int Strenght, int Agility, int Intelligence, int Speed)
+    public Potion(int Charisma, int Strenght, int Agility, int Intelligence, int Speed, int RestauredHP, int RestauredMana, int Poison, String itemName, int price, boolean saleable)
     {
-        super();
+        super(RestauredHP, RestauredMana, Poison, itemName, price, saleable);
+        this.Charisma = Charisma;
+        this.Strength = Strength;
+        this.Agility = Agility;
+        this.Intelligence = Intelligence;
+        this.Speed = Speed;
     }
 
     /** getcharisma is a method which gives how many
@@ -34,7 +39,7 @@ public class Potion extends Food
      */
     public int getCharisma()
     {
-      return int;
+      return Charisma;
     }
 
     /** getStrenght is a method which gives how many
@@ -43,7 +48,7 @@ public class Potion extends Food
      */
     public int getStrenght()
     {
-      return int;
+      return Strength;
     }
 
     /** getAgility is a method which gives how many
@@ -52,7 +57,7 @@ public class Potion extends Food
      */
     public int getAgility()
     {
-      return int;
+      return Agility;
     }
 
     /** getIntelligence is a method which gives how many
@@ -61,7 +66,7 @@ public class Potion extends Food
      */
     public int getIntelligence()
     {
-      return int;
+      return Intelligence;
     }
 
     /** getSpeed is a method which gives how many
@@ -70,6 +75,6 @@ public class Potion extends Food
      */
     public int getSpeed()
     {
-      return int;
+      return Speed;
     }
   }
