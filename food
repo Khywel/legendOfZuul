@@ -27,25 +27,28 @@ public class Food extends Item
 
     /** getHPValue is a method which gives how many
      *  HP is restaured by this food.
+     * @return : RestauredHP
      */
     public int getHPValue()
     {
-      return RestauredHP;
+      return int;
     }
 
     /** getManaValue is a method which gives how many
      *  Mana is restaured by this food.
+     * @return : restauredMana
      */
     public int getManaValue()
     {
-      return RestauredMana;
+      return int;
     }
 
     /** getPoisonValue is a method which gives how many
      *  HP is removed by this food.
+     * @return : Poison
      */
     public int getPoisonValue()
     {
-      return Poison;
+      return int ;
     }
 }
