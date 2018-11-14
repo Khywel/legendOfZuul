@@ -23,7 +23,9 @@ public class Spell
      */
     public Spell(int HealVal, int AttackVal, int ImproveVal)
     {
-
+        this.HealVal = HealVal;
+        this.AttackVal = AttackVal;
+        this.ImproveVal = ImproveVal;
     }
 
     /** getHealVal is a method which gives how many HP
@@ -32,7 +34,7 @@ public class Spell
      */
     public int getHealVal()
     {
-      return int;
+      return HealVal;
     }
 
     /** getAttackVal is a method which gives how many
@@ -41,7 +43,7 @@ public class Spell
      */
     public int getAttackVal()
     {
-      return int;
+      return AttackVal;
     }
 
 
@@ -52,7 +54,7 @@ public class Spell
      */
     public int getImproveVal()
     {
-      return int;
+      return ImproveVal;
     }
 
 
