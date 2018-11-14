@@ -7,7 +7,7 @@ import java.util.*;
  * a price to be bought or resold to a particular npc and a boolean to know if
  * the item can be sell.
  * This class is part of the "Legend of Zuul" .
- * @author  Luce AUDOUARD
+ * @author  Luc AUDOUARD
  * @version 2018.11.14
  */
 
@@ -16,25 +16,46 @@ public class Item {
     protected int price;
     private boolean saleable;
 
-    public Item {
-        // initialisation des variables d'instance
-        itemName = this.itemName;
-        price = this.price;
-        saleable = this.saleable;
+    /**
+     * Item constructor
+     * @param itemName The name of the item. It can not be null.
+     * @param price The price of the item. This variable tie in the buying
+     * the resale price is equivalent to 50% of the purchase price. It can not
+     * be null.
+     * @param saleable If the item can be sell or not.
+     */
+    public Item (String itemName, int price, boolean saleable) {
+        // variables initialisation
+        this.itemName = itemName;
+        this.price = price;
+        this.saleable = saleable;
     }
 
+    /**
+    * Return the name of the item
+    */
     public String getItemName (){
         return itemName;
     }
 
+    /**
+    * Return the price of the item
+    */
     public int getPrice (){
         return price;
     }
 
+    /**
+    * Return true or false if the item can be sell or not
+    */
     public boolean getSaleable (){
         return saleable;
     }
 
+    /**
+    * The price may vary over the game, overwrite the old price by a
+    * new price
+    */
     public void setPrice (int newPrice){
         price = newPrice;
     }
