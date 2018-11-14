@@ -11,50 +11,51 @@ The player must pay in coins.
 
 public class Inner extends Merchant
 {
-private List<Item> items = new ArrayList <Item>();
-private String nameObject;
-private int priceObject;
+      private List<Item> items = new ArrayList <Item>();
+      private String nameObject;
+      private int priceObject;
 
-}
+      }
 
-/**
- * Constructor Inner
- * @Item arraylist is empty when the inner is created
- */
-public Inner ()
-{
-}
+      /**
+       * Constructor Inner
+       * @Item arraylist is empty when the inner is created
+       */
+      public Inner ()
+      {
+      }
 
-/**
-* Method which allows to add an object in the Inner's list.
-The method checks if the item can be sold. And if he can be only sold by the inner (food or poison).
-*/
-public boolean addItemToInner (Item object)
-{
-}
+      /**
+      * Method which allows to add an object in the Inner's list.
+      The method checks if the item can be sold. And if he can be only sold by the inner (food or poison).
+      */
+      public boolean addItemToInner (Item object)
+      {
+      }
 
-/**  setInfoObject
-* Display a menu to allow the player to choose what he wants to buy.
-* Set an ID, the name of each object he is able to sell and its value next.
-* One line for each object.
-* The last line gives the option to quit without buy anything.
-*/
-public void displayObjectsAndValues ()
-{
-}
+      /**  setInfoObject
+      * Display a menu to allow the player to choose what he wants to buy.
+      * Set an ID, the name of each object he is able to sell and its value next.
+      * One line for each object.
+      * The last line gives the option to quit without buy anything.
+      */
+      public void displayObjectsAndValues ()
+      {
+      }
 
-/** process of the player's choice
-* Verify if the ID is correct.
-*If it is correct, it will check if the player has enough money.
-*/
-public boolean checkPlayerChoice (int ID)
-{
-}
+      /** process of the player's choice
+      * Verify if the ID is correct.
+      *If it is correct, it will check if the player has enough money.
+      */
+      public boolean checkPlayerChoice (int ID)
+      {
+      }
 
-/** restaure the player's HP
-* If the player sleeps in the inn, the night will restaure his XPmax
-*If he stays one night, he get his HPmax
-*/
-public int addHP()
-{
+      /** restaure the player's HP
+      * If the player sleeps in the inn, the night will restaure his XPmax
+      *If he stays one night, he get his HPmax
+      */
+      public int addHP()
+      {
+      }
 }
