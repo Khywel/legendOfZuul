@@ -1,0 +1,18 @@
+/**
+ *  This class give all the
+ *
+ *
+ * @author  Driss
+ * @version 2006.03.30
+ */
+
+public class Actor
+{
+    /**
+     *
+     */
+    public Actor() {
+
+
+
+    } 

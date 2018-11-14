@@ -1,0 +1,52 @@
+import java.util.*;
+/**
+ *
+ *
+ *
+ * @author  Sixtine Vernhes
+ * @version 2018.11.14
+ */
+public class Enemy extends Item
+{
+    int RestauredHP;
+    int RestauredMana ;
+    int Poison;
+
+    /**
+     * Create an item food.
+     * no exits. "description" is something like "a kitchen" or
+     * "an open court yard".
+     * @param description The room's description.
+     */
+    public Food(int RestauredHP, int RestauredMana, int Poison)
+    {
+        super();
+    }
+
+          /**
+     * Define the exits of this room.  Every direction either leads
+     * to another room or is null (no exit there).
+     * @param north The north exit.
+     * @param east The east east.
+     * @param south The south exit.
+     * @param west The west exit.
+     */
+    public void setExits(String direction, Room r)
+    {
+        exits.put(direction, r);
+    }
+
+    public HashMap getExits()
+    {
+        return exits;
+    }
+
+    /**
+     * @return The description of the room.
+     */
+    public String getDescription()
+    {
+        return description;
+    }
+
+}

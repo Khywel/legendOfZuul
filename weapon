@@ -1,0 +1,55 @@
+import java.util.*;
+/**
+ * Class Weapon -
+ * A weapon is an kind of item. It is used by the player to gain damage.
+ * there is different types of weapon and so different attributes depending the weapon.
+ * A weapon is caracterize by a "damage up", a specific strength against a kind of enemy
+ * and a boolean to specify if the weapond use magic attributes to deal damage or not.
+ *
+ * @author  Matthieu
+ * @version 2018.11.14
+ */
+public class Weapon
+{
+    private int damage;
+    private
+    private boolean magic;
+
+    /**
+     * Create a room described "description". Initially, it has
+     * no exits. "description" is something like "a kitchen" or
+     * "an open court yard".
+     * @param description The room's description.
+     */
+    public Room(String description)
+    {
+        this.description = description;
+    }
+
+    /**
+     * Define the exits of this room.  Every direction either leads
+     * to another room or is null (no exit there).
+     * @param north The north exit.
+     * @param east The east east.
+     * @param south The south exit.
+     * @param west The west exit.
+     */
+    public void setExits(String direction, Room r)
+    {
+        exits.put(direction, r);
+    }
+
+    public HashMap getExits()
+    {
+        return exits;
+    }
+
+    /**
+     * @return The description of the room.
+     */
+    public String getDescription()
+    {
+        return description;
+    }
+
+}
