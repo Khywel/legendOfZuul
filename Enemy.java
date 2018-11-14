@@ -13,8 +13,10 @@ public class Enemy extends Actor
      * Constructor of an enemy
      *  @param loot list of loot of an enemy, can be have null value
      */
-    public Enemy(ArrayList aLoot)
+    public Enemy(ArrayList aLoot, String name)
     {
+    	super(name);
+	loot = aLoot;
     }
 
     /**
