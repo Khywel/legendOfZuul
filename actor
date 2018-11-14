@@ -28,7 +28,7 @@ public class Actor
     /**
     * @return The description of the Actor.
     */
-    public return getInformation (String name){
+    public String getInformation (String name){
       
     }
     
