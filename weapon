@@ -33,14 +33,12 @@ public class Weapon extends Item
     }
     /** getFortEnemy is a method which gives the damage up specific against specific enemy
      */
-    public int getFortEnemy()
+    public Enemy getFortEnemy()
     {          return fortEnemy;
     }
     /** getMagic is a method which specify if the weapon deals physical or magical damage
      */
-    public int getMagic()
+    public boolean getMagic()
     {          return magic;
     }
-
-
 }
