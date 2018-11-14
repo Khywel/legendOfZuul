@@ -1,8 +1,8 @@
 import java.util.*;
 /**
- * Class Food - an Item which can be ate by the player to gain energy, mana
- * or can poison the player and so decrease his energy.
- * Food has a cost, a name and can be sell or not
+ * Class Potion - an Item which can be tooken by the player to increase
+ * some of his attributes : Charisma, Strenght, Agility, Intelligence,
+ * and Speed.
  * This class is part of the "Legend of Zuul" .
  *
  * @author  Angélique Lanneau
@@ -17,11 +17,13 @@ public class Potion extends Food
     protected int Speed;
 
     /**
-     * Constructor of the class food.
-     *
-     * @param : Name, Cost, Salable, RestauredHP, RestauredMana, Poison
+     * Constructor of the class Potion.
+     * Return true if the potion is created
+     * Return false if one of the parameter is wrong : if one
+     * of the attributes point is negative
+     * @param : Charisma, Strenght, Agility, Intelligence,Speed
      */
-    public Potion(int Charisma, int Strenght, int Agility, int Inteligence, int Speed)
+    public Potion(int Charisma, int Strenght, int Agility, int Intelligence, int Speed)
     {
         super();
     }
