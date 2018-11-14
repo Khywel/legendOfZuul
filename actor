@@ -21,8 +21,8 @@ public class Actor
     * Create the actor 
     * @param name : name of the actor 
     */
-    public Actor(String name) {
-
+    public Actor(String aName) {
+        name = aName;
     } 
 
     /**
