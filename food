@@ -22,6 +22,9 @@ public class Food extends Item
     public Food(int RestauredHP, int RestauredMana, int Poison)
     {
         super();
+        this.RestauredHP = RestauredHP;
+        this.RestauredMana = RestauredMana; 
+        this.Poison = Poison;
     }
 
 
