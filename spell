@@ -15,6 +15,9 @@ public class Spell
 
     /**
      * Constructor of the class Spell.
+     * If the spell is created, a true value is returned
+     * A false value is returned if a wrong value is given.
+     * A wrong value is a negative integer.
      *
      * @param : HealVal, AttackVal, ImproveVal
      */
