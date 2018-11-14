@@ -15,10 +15,12 @@ public class Player extends Actor
     private int gold;
     private boolean visible;
     private boolean havreSac;
-    private String Weapon;
+    private String weapon;
     private ArrayList quest = new ArrayList();
     private ArrayList inventory = new ArrayList();
     private String localisation;
+    private String classes; 
+    private String race;
 
     /**
      * Constructor Joueur
@@ -148,8 +150,8 @@ public class Player extends Actor
     }
     /** getClass is a method which gives your Class
     */
-    public String getClass()
-    {          return class;
+    public String getClasses()
+    {          return classes;
     }
 
     /** getLocalisation is a method which gives your localisation
