@@ -24,7 +24,7 @@ public class Boss extends Enemy
 
     /**Add a new quest in the Quest list of the player
     return true if the quest is added*/
-    public boolean giveQuestToNPC(Quest quest)
+    public boolean giveQuestToPlayer(Quest quest)
     {
         return true;
     }
