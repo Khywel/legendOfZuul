@@ -12,8 +12,6 @@ The player must pay in coins.
 public class Inner extends Merchant
 {
       private List<Item> items = new ArrayList <Item>();
-      private String nameObject;
-      private int priceObject;
 
       }
 
@@ -21,8 +19,9 @@ public class Inner extends Merchant
        * Constructor Inner
        * @Item arraylist is empty when the inner is created
        */
-      public Inner ()
+      public Inner (String name)
       {
+            super(name);
       }
 
       /**
