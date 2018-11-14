@@ -1,0 +1,32 @@
+import java.util.*;
+/**
+ * Class InvisibleObject -
+ * The InvisibleObject is a king of Item. It is used to set the player
+ * invisible and permit the player to avoid a fight against wild monsters.
+ * It only composed by one boolean 'invisibility' which is can be true or
+ * false.
+ * This class is part of the "Legend of Zuul" .
+ * @author  Luc AUDOUARD
+ * @version 2018.11.14
+ */
+
+public class invisibleObject extends Item {
+    private boolean invisibility;
+
+    /**
+     * InvisibleObject constructor
+     * @param invisibility If the item can set the player invisible or not.
+     */
+    public invisibleObject(){
+        super();
+        this.invisibility = invisibility;
+    }
+
+    /**
+     * Return true or false if the item can set the player invisible or not
+     */
+    public boolean getInvisibility(){
+        return invisibility;
+    }
+
+}

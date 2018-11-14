@@ -1,0 +1,56 @@
+import java.util.*;
+/**
+ * Class Spell - a Spell is done by the Player to heal himself, or to attack
+ * an enemy. It can also improves the player's abilities.
+ * This class is part of the "Legend of Zuul" .
+ *
+ * @author  Angélique Lanneau
+ * @version 2018.11.14
+ */
+public class Spell
+{
+    private int HealVal;
+    private int AttackVal;
+    private int ImproveVal;
+
+    /**
+     * Constructor of the class Spell.
+     *
+     * @param : HealVal, AttackVal, ImproveVal
+     */
+    public Spell(int HealVal, int AttackVal, int ImproveVal)
+    {
+
+    }
+
+    /** getHealVal is a method which gives how many HP
+     *  is restored by the spell.
+     * @return : HealVal
+     */
+    public int getHealVal()
+    {
+      return int;
+    }
+
+    /** getAttackVal is a method which gives how many
+     *  attack point is given by the spell.
+     * @return : AttackVal
+     */
+    public int getAttackVal()
+    {
+      return int;
+    }
+
+
+
+    /** getImproveValue is a method which return how many
+     *  points of ability is given by the spell.
+     * @return: ImproveVal
+     */
+    public int getImproveVal()
+    {
+      return int;
+    }
+
+
+  }
