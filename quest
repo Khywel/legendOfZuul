@@ -3,6 +3,7 @@ import java.util.*;
  * Class Quest - A quest is a mission given by a NPC to the player.
  * The quest consists in finding a specific item and bring it back to the NPC.
  * The quest is locked until the player execute a certain condition (finish another quest...).
+ * When the player succeed the quest, he get a reward that can be an item, gold and/or XP.
  *
  * @author  Marie
  * @version 2018.11.14
@@ -19,39 +20,36 @@ public class Quest
     /**
      * Create a quest described by a "description". Initially, it is locked.
      * "description" is something like "Find a slime's drop".
+     *
+     * @param locked When the quest is locked, the player cannot get it. Initialize to true.
      * @param description The quest's description.
+     * @param condition The condition to unlock the quest.
+     * @param reward_item An item given as reward to the player when he succeed a quest.
+     * @param reward_xp Experience given as reward to the player when he succeed a quest.
+     * @param reward_gold Money given as reward to the player when he succeed a quest.
      */
     public Quest(String questDescription, String questCondition, Item questItem, int questXp, int questGold)
     {
-        this.boolean =
-        this.description = questdescription;
-        this.condition =
+        this.locked = true;
+        this.description = questDescription;
+        this.condition =questCondition;
+        this.reward_item = questItem;
+        this.reward_xp = questXp;
+        this.reward_gold = questGold;
     }
 
     /**
-     * Define the exits of this room.  Every direction either leads
-     * to another room or is null (no exit there).
-     * @param north The north exit.
-     * @param east The east east.
-     * @param south The south exit.
-     * @param west The west exit.
+     * Unlock a quest. When a quest is unlock, the NPC can give it to the player.
      */
-    public void setExits(String direction, Room r)
+    public void unlock()
     {
-        exits.put(direction, r);
-    }
-
-    public HashMap getExits()
-    {
-        return exits;
     }
 
     /**
-     * @return The description of the room.
+     * Lock a quest. When a player finish a quest, this one is locked.
      */
-    public String getDescription()
+    public void lock()
     {
-        return description;
     }
 
 }
