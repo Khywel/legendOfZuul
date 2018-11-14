@@ -24,7 +24,7 @@ public class Player extends Actor
      * Constructor Joueur
      *
      */
-    public Player (String sex, String aRace, String aClass)
+    public Player (String sex, String aRace, String aClass, String aName)
     {
       String weapon = null;
       int gold = 10;
@@ -36,7 +36,7 @@ public class Player extends Actor
 
       race = aRace;
       classes = aClass;
-      super();
+      super(name);
     }
 
     /**
