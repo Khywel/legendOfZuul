@@ -15,9 +15,9 @@ public class Boss extends Enemy
     /**Creates a Boss who is an actor with an empty quest list at the beginning
 	* The quest list will be filled in the constructor with the main quest : get the 6 statuette back
 	*/
-    public NPC(ArrayList loot)
+    public Boss(ArrayList loot, String name)
     {
-        super(loot);
+        super(loot, name);
     }
 
     /**Add a new quest in the Quest list of the player
