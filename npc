@@ -15,7 +15,7 @@ public class NPC extends Actor
     /**Creates an NPC who is an actor with an empty quest list at the beginning*/
     public NPC(String name)
     {
-        super();
+        super(name);
     }
 
     /**Add a new quest in the Quest list of the NPC
