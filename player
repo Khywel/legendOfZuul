@@ -26,20 +26,20 @@ public class Player extends Actor
      * Constructor Joueur
      *
      */
-    public Player (String sex, String aRace, String aClass, String aName)
+    public Player (int sex, String aRace, String aClass, String aName)
     {
+      super(aName);
       String weapon = null;
       int gold = 10;
       int EXP =0;
       int level = 1;
       boolean visible = true;
       boolean HavreSac = false;
-      Place currentPlace = Village;
+      //Place currentPlace = Village;
       this.sex = sex;
 
       race = aRace;
       classes = aClass;
-      super(name);
     }
 
     /**
@@ -121,7 +121,7 @@ public class Player extends Actor
     /** getEXP is a method which gives your EXP
      */
     public int getExp()
-    {          return Exp;
+    {          return exp;
     }
     /** getLevel is a method which gives your level
      */
