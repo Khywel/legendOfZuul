@@ -10,8 +10,9 @@ import java.util.*;
 public class Priest extends NPC
 {
     /**Creates a Priest */
-    public Priest()
+    public Priest(String name)
     {
+        super(name);
     }
 
     /**The priest prays to restore all the mana of the player
