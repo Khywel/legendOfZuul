@@ -1,60 +1,64 @@
 import java.util.*;
 /**
-* Class Merchant
-* A Merchant is a kind of NPCNPC. The merchants can sell differentt types of objects (weapons) except the magic pan and poison. They have a number of gold pieces unlimited.
-* We can sell them an unlimited number of items.
+ * Class Merchant
+ * A Merchant is a kind of NPCNPC. The merchants can sell differentt types of objects (weapons) except the magic pan and poison. They have a number of gold pieces unlimited.
+ * We can sell them an unlimited number of items.
 
-* This class is part of the "Legend of Zuul" .
-* @author  Charlotte Bey
-* @version 2018.11.14
-*/
+ * This class is part of the "Legend of Zuul" .
+ * @author  Charlotte Bey
+ * @version 2018.11.14
+ */
 
 public class Merchant extends NPC
 {
-private List<Weapon> items = new ArrayList <Weapon>();
+    private List<Weapon> items = new ArrayList <Weapon>();
 
-/**
- * Constructor Merchant
- * @Weapon arraylist is empty when the merchant is created
- */
-public Merchant (String name)
-{
-    super(name);
-}
+    /**
+     * Constructor Merchant
+     * @Weapon arraylist is empty when the merchant is created
+     */
+    public Merchant (String name)
+    {
+        super(name);
+    }
 
-/**
-* Method which allows to add an object in the Merchant's list.
-The method checks if the item can be sold.
-*/
-public boolean addItemToMerchant (Weapon object)
-{
-}
+    /**
+     * Method which allows to add an object in the Merchant's list.
+    The method checks if the item can be sold.
+     */
+    public boolean addItemToMerchant (Weapon object)
+    {
+        return true;
+    }
 
+    /**  setNameObject
+     * Display a menu to allow the player to choose what he wants to buy.
+     * Set an ID, the name of each object he is able to sell and its value next.
+     * One line for each object.
+     * The last line gives the option to quit without buy anything.
+     */
+    public void displayObjectsAndValues ()
+    {
+    }
 
-/**  setNameObject
-* Display a menu to allow the player to choose what he wants to buy.
-* Set an ID, the name of each object he is able to sell and its value next.
-* One line for each object.
-* The last line gives the option to quit without buy anything.
-*/
-public void displayObjectsAndValues ()
-{
-}
+    /** process of the player's choice
+     * Verify if the ID is correct.
+     *!WARNING! The previous method must verify that the parameter is a int
+     *If it is correct, it will returns true.
+     * If it is incorrect, itreturs false
+     */
+    public boolean checkPlayerChoice (int ID)
+    {
+        return true;
+    }
 
-/** process of the player's choice
-* Verify if the ID is correct.
-*!WARNING! The previous method must verify that the parameter is a int
-*If it is correct, it will returns true.
-* If it is incorrect, itreturs false
-*/
-public boolean checkPlayerChoice (int ID)
-{
-}
-
-/** process the player's coins
-* Verify if the player has enough money.
-*If the player has enough money, it returns true.
-*If it is incorrect, it returns false.
-*/
-public boolean checkPlayerCoins (int Coins){
+    /** process the player's coins
+     * Verify if the player has enough money.
+     *If the player has enough money, it returns true.
+     *If it is incorrect, it returns false.
+     */
+    public boolean checkPlayerCoins (int Coins)
+    {
+        return true;
+    }
 }
