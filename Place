@@ -1,3 +1,4 @@
+import java.util.*;
 /**
  *  This world is composed of a carte where we can found different places.
  *  This class give the possibilities where the PNJ, enemy, and player can go. 
@@ -25,30 +26,16 @@ public class Place
     /*
     *Create all the place and their exits
     */
-    public void creatPlace (){
-
-      
+    public void creatPlace (){ 
     }
 
     /**
     * @return The description of the Place.
     */
     public String getDescription (){
-
-      
-    }
-    
-    /**
-    * @return The description of the Place.
-    */
-    public String getPlace (String name){
-
-      
+        return description;
     }
 
-    public void setExits (){
-
-      
+    public void setExits (){ 
     }
-
 }
