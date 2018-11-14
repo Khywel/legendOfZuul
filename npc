@@ -12,13 +12,14 @@ private List<Quest> quetes;
 public class NPC extends Actor
 {
     /**Creates an NPC who is an actor with an empty quest list at the beginning*/
-    public void NPC()
+    public NPC(String name)
     {
+        super();
     }
 
     /**Add a new quest in the Quest list of the NPC
     return true if the quest is added*/
-    public boolean giveQuestToNPC(quest : Quest)
+    public boolean giveQuestToNPC(Quest quest)
     {
     }
 }
