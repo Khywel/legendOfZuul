@@ -13,8 +13,6 @@ public class Merchant extends NPC
 {
 private List<Weapon> items = new ArrayList <Weapon>();
 
-}
-
 /**
  * Constructor Merchant
  * @Weapon arraylist is empty when the merchant is created
