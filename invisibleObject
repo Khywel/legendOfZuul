@@ -17,7 +17,7 @@ public class invisibleObject extends Item {
      * InvisibleObject constructor
      * @param invisibility If the item can set the player invisible or not.
      */
-    public invisibleObject(String itemName, int price, boolean saleable){
+    public invisibleObject(String itemName, int price, boolean saleable, boolean invisibility){
         super(itemName, price, saleable);
         this.invisibility = invisibility;
     }
