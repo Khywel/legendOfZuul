@@ -12,8 +12,6 @@ import java.util.*;
 public class Merchant extends NPC
 {
 private List<Weapon> items = new ArrayList <Weapon>();
-private String nameObject;
-private int priceObject;
 
 }
 
@@ -21,8 +19,9 @@ private int priceObject;
  * Constructor Merchant
  * @Weapon arraylist is empty when the merchant is created
  */
-public Merchant ()
+public Merchant (String name)
 {
+    super(name);
 }
 
 /**
