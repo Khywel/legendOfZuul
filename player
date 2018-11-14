@@ -1,47 +1,160 @@
 import java.util.*;
 /**
  * Class Player -
- * The player
- *
- *
- * This class is part of the "Legend of Zuul" .
- *
+ * The player is a class that inherits from actor.
+ * it's define the potential actions of the player and some of his attributes.
+ * This class is part of the "Legend of Zuul".
  * @author  Matthieu Coupet
  * @version 2018.11.14
  */
 public class Player extends Actor
 {
-    private String  sexe;
-    private int EXP;
+    private int sex;
+    private int exp;
     private int level;
     private int gold;
     private boolean visible;
-    private boolean HavreSac;
+    private boolean havreSac;
     private String Weapon;
-    private ArrayList race = new ArrayList();
-    private ArrayList class = new ArrayList();
-
+    private ArrayList quest = new ArrayList();
+    private ArrayList inventory = new ArrayList();
+    private String localisation;
 
     /**
      * Constructor Joueur
      *
      */
-    public Weapon(String sexe, ArrayList aRace, ArrayList aClass)
+    public Player (String sex, String aRace, String aClass)
     {
       String weapon = null;
       int gold = 10;
       int EXP =0;
-      int level = 0;
+      int level = 1;
       boolean visible = true;
       boolean HavreSac = false;
+      Place currentPlace = Village;
+
       race = aRace;
       class = aClass;
       super();
     }
 
-    public String attack()
+    /**
+     * the player gets one action by turn during fight. He can also use an item like food or potion once by turn in addition to the action
+     * if the mana point of the player is equal to zero, the healer can't heal, gains attributes or uses spell attack.
+     * 1/ the player can heal himself with a spell (then he loses one mana point)
+     * 2/ the player can boost himself and gain attribute points(then he loses one mana point)
+     * 3/the player can attack enemies.
+     *    first, the choice of the attack is asked to the player (physical or spell)
+     *    if it's physical attack, the strenght, the weapon damage and a random roll determines the damage (between 1-20)
+     *    if it's magical attack, the intelligence, the weapon damage (magic) and a random roll determines the damage (between 1-20)
+     *    The player loses a mana point
+     *    if the player's health point falls to zero, the game end
+     *    if the player is still alive, and the enemy is dead, the player gains gold (random 1-20) and item(s) depending a table of loot of the enemy
+     */
+    public void action()
     {
     }
 
+    /**
+     * the player gain a level after earn enought xp (10)
+     * if the race is elf, the player gain also some charisma's attrribute (+1)
+     * when playergains a level, a gains 5 attributes points that he can split his different attributes.
+     * the player gains also HP +5 by level
+     * the exp is reset to zero (the rest of the experience no needed to level up is added to the new level)
+     */
+    public void LevelUp()
+    {
+    }
+
+    /**
+     * the player can move around the map, square by square (by default) or several squares depending the speed.
+     * move change the localisation attribute of the player
+     */
+    public void move()
+    {
+    }
+
+    /**
+     * atfer the player buys an item, he loses gold equals to the cost of the item and adds the item to the inventory list
+     */
+    public void addItemBuy()
+    {
+    }
+    /**
+     * When a quest is finished, the quest is locked and can't be done again.
+     * then the player adds gains depending the quest
+     * player can gain  - gold  -exp  -items (add to the inventory list)
+     */
+    public void endQuest()
+    {
+    }
+
+
+    /**
+     * the player can use an item; if the itemis food, the hit point, mana and attributes can change when used,
+     * if it's a weapon, the player changes his weapon for another from the bag
+     * if it's an item from the invisible class, the boolean visible of the player can change.
+     */
+    public void useItem()
+    {
+    }
+
+    /**
+     * allow the player to remember the quest he took from NPC.
+     * browse the table of quest, for each quest show its description
+     */
+    public void rememberQuest()
+    {
+    }
+
+
+    /////////////// GETTER/////////////////////
+    /** getsex is a method which gives your sex
+     */
+    public int getSex()
+    {          return sex;
+    }
+    /** getEXP is a method which gives your EXP
+     */
+    public int getExp()
+    {          return Exp;
+    }
+    /** getLevel is a method which gives your level
+     */
+    public int getLevel()
+    {          return level;
+    }
+    /** getGold is a method which gives your gold
+     */
+    public int getgold()
+    {          return gold;
+    }
+    /** getVisible is a method which gives you if you are visible or not
+     */
+    public boolean getVisible()
+    {          return visible;
+    }
+    /** getHavreSac is a method which gives you if you are visible or not
+     */
+    public boolean getHavreSace()
+    {          return havreSac;
+    }
+    /** getRace is a method which gives your race
+     */
+    public String getRace()
+    {          return race;
+    }
+    /** getClass is a method which gives your Class
+    */
+    public String getClass()
+    {          return class;
+    }
+
+    /** getLocalisation is a method which gives your localisation
+    */
+    public String getLocalisation()
+    {          return localisation;
+    }
 
 }
