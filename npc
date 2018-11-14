@@ -8,9 +8,10 @@
  * @author  Laure Baudoin
  * @version 14/11/18
  */
-private List<Quest> quetes;
+
 public class NPC extends Actor
 {
+    private List<Quest> quetes;
     /**Creates an NPC who is an actor with an empty quest list at the beginning*/
     public NPC(String name)
     {
