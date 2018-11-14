@@ -34,7 +34,7 @@ public class Food extends Item
      */
     public int getHPValue()
     {
-      return int;
+      return RestauredHP;
     }
 
     /** getManaValue is a method which gives how many
@@ -43,7 +43,7 @@ public class Food extends Item
      */
     public int getManaValue()
     {
-      return int;
+      return restauredMana;
     }
 
     /** getPoisonValue is a method which gives how many
@@ -52,6 +52,6 @@ public class Food extends Item
      */
     public int getPoisonValue()
     {
-      return int ;
+      return Poison ;
     }
 }
