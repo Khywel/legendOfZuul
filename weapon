@@ -18,9 +18,12 @@ public class Weapon extends Item
     /**
      * Constructor Weapon
      */
-    public Weapon(int damage, Enemy fortEnemy, boolean magic)
+    public Weapon(int damage, Enemy fortEnemy, boolean magic, String itemName, int price, boolean saleable)
     {
-      super();
+      super(itemName, price, saleable);
+      this.damage = damage;
+      this.fortEnemy = fortEnemy;
+      this.magic = magic;
     }
 
     /** getDamage is a method which gives the damage of the weapon
