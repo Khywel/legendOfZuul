@@ -1,0 +1,45 @@
+/**
+ *  This world is composed of a carte where we can found different places.
+ *  This class give the possibilities where the PNJ, enemy, and player can go. 
+ *  Each place contains a different monster that will be shown randomly.
+ *
+ *  This class is part of the "Legend of Zuul".
+ * @author  Driss
+ * @version 14.11.2018
+ */
+
+public class Place
+{
+    private String description;
+    private NPC npc; 
+    private HashMap<String, Place> placeExits;
+    /**
+    * The constructor of the class place
+    * create a described "description" for places
+    */
+    public Place(String description) {
+
+    }  
+
+    /*
+    *Create all the place and their exits
+    */
+    public void creatPlace (){
+
+      
+    }
+
+    /**
+    * @return The description of the Place.
+    */
+    public String getDescription (){
+
+      
+    }
+
+    public void setExits (){
+
+      
+    }
+
+}
