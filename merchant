@@ -1,44 +1,63 @@
 import java.util.*;
 /**
-*Class Merchant
-* A Merchant is a kind of PNJ. The merchants can sell differend types of objects (weapons) except the magic pan. They have a number of gold pieces unlimited.
-*We can sell them an unlimited number of items.
+* Class Merchant
+* A Merchant is a kind of NPCNPC. The merchants can sell differentt types of objects (weapons) except the magic pan and poison. They have a number of gold pieces unlimited.
+* We can sell them an unlimited number of items.
 
 * This class is part of the "Legend of Zuul" .
 * @author  Charlotte Bey
 * @version 2018.11.14
 */
 
-public class Merchant
+public class Merchant extends NPC
 {
-private String NameObject;
-private int PriceObject;
-private int GoldPieces;
+private List<Weapon> items = new ArrayList <Weapon>();
+private String nameObject;
+private int priceObject;
 
 }
 
 /**
  * Constructor Merchant
- *
+ * @Weapon arraylist is empty when the merchant is created
  */
-public Merchant (String NameObject, int PriceObject, int GoldPieces)
+public Merchant ()
 {
 }
 
-/** Set the Name of the object
-public void setNameObject (String newNameObject)
+/**
+* Method which allows to add an object in the Merchant's list.
+The method checks if the item can be sold.
+*/
+public boolean addItemToMerchant (Weapon object)
 {
-setNameObject = newName
 }
 
 
-/** getPriceObject
- * Get the price of the object
- */
-
-public String getPriceObject()
+/**  setNameObject
+* Display a menu to allow the player to choose what he wants to buy.
+* Set an ID, the name of each object he is able to sell and its value next.
+* One line for each object.
+* The last line gives the option to quit without buy anything.
+*/
+public void displayObjectsAndValues ()
 {
-    System.out.println ();
-    System.out.println ();
-    System.out.println ( );
+}
+
+/** process of the player's choice
+* Verify if the ID is correct.
+*!WARNING! The previous method must verify that the parameter is a int
+*If it is correct, it will returns true.
+* If it is incorrect, itreturs false
+*/
+public boolean checkPlayerChoice (int ID)
+{
+}
+
+/** process the player's coins
+* Verify if the player has enough money.
+*If the player has enough money, it returns true.
+*If it is incorrect, it returns false.
+*/
+public boolean checkPlayerCoins (int Coins){
 }
