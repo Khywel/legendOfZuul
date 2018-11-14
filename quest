@@ -1,1 +1,57 @@
-ccccccccccc
+import java.util.*;
+/**
+ * Class Quest - A quest is a mission given by a NPC to the player.
+ * The quest consists in finding a specific item and bring it back to the NPC.
+ * The quest is locked until the player execute a certain condition (finish another quest...).
+ *
+ * @author  Marie
+ * @version 2018.11.14
+ */
+public class Quest
+{
+    private boolean locked;
+    private String description;
+    private String condition;
+    private Item reward_item;
+    private int reward_xp;
+    private int reward_gold;
+
+    /**
+     * Create a quest described by a "description". Initially, it is locked.
+     * "description" is something like "Find a slime's drop".
+     * @param description The quest's description.
+     */
+    public Quest(String questDescription, String questCondition, Item questItem, int questXp, int questGold)
+    {
+        this.boolean =
+        this.description = questdescription;
+        this.condition =
+    }
+
+    /**
+     * Define the exits of this room.  Every direction either leads
+     * to another room or is null (no exit there).
+     * @param north The north exit.
+     * @param east The east east.
+     * @param south The south exit.
+     * @param west The west exit.
+     */
+    public void setExits(String direction, Room r)
+    {
+        exits.put(direction, r);
+    }
+
+    public HashMap getExits()
+    {
+        return exits;
+    }
+
+    /**
+     * @return The description of the room.
+     */
+    public String getDescription()
+    {
+        return description;
+    }
+
+}

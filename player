@@ -1,0 +1,47 @@
+import java.util.*;
+/**
+ * Class Player -
+ * The player
+ *
+ *
+ * This class is part of the "Legend of Zuul" .
+ *
+ * @author  Matthieu Coupet
+ * @version 2018.11.14
+ */
+public class Player extends Actor
+{
+    private String  sexe;
+    private int EXP;
+    private int level;
+    private int gold;
+    private boolean visible;
+    private boolean HavreSac;
+    private String Weapon;
+    private ArrayList race = new ArrayList();
+    private ArrayList class = new ArrayList();
+
+
+    /**
+     * Constructor Joueur
+     *
+     */
+    public Weapon(String sexe, ArrayList aRace, ArrayList aClass)
+    {
+      String weapon = null;
+      int gold = 10;
+      int EXP =0;
+      int level = 0;
+      boolean visible = true;
+      boolean HavreSac = false;
+      race = aRace;
+      class = aClass;
+      super();
+    }
+
+    public String attack()
+    {
+    }
+
+
+}

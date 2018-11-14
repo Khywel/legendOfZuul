@@ -6,47 +6,25 @@ import java.util.*;
  * @author  Sixtine Vernhes
  * @version 2018.11.14
  */
-public class Enemy extends Item
+public class Enemy extends Actor
 {
-    int RestauredHP;
-    int RestauredMana ;
-    int Poison;
-
+    private ArrayList loot = new ArrayList();
     /**
-     * Create an item food.
-     * no exits. "description" is something like "a kitchen" or
-     * "an open court yard".
-     * @param description The room's description.
+     * Constructor of an enemy
+     *  @param loot list of loot of an enemy, can be have null value
      */
-    public Food(int RestauredHP, int RestauredMana, int Poison)
+    public Enemy(ArrayList aLoot)
     {
+        loot = aLoot;
         super();
     }
 
-          /**
-     * Define the exits of this room.  Every direction either leads
-     * to another room or is null (no exit there).
-     * @param north The north exit.
-     * @param east The east east.
-     * @param south The south exit.
-     * @param west The west exit.
-     */
-    public void setExits(String direction, Room r)
-    {
-        exits.put(direction, r);
-    }
-
-    public HashMap getExits()
-    {
-        return exits;
-    }
-
     /**
-     * @return The description of the room.
+     * @return list of loot of an enemy
      */
-    public String getDescription()
+    public ArrayList getLoot()
     {
-        return description;
+        return loot;
     }
 
 }

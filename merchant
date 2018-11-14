@@ -1,1 +1,44 @@
+import java.util.*;
+/**
+*Class Merchant
+* A Merchant is a kind of PNJ. The merchants can sell differend types of objects (weapons) except the magic pan. They have a number of gold pieces unlimited.
+*We can sell them an unlimited number of items.
 
+* This class is part of the "Legend of Zuul" .
+* @author  Charlotte Bey
+* @version 2018.11.14
+*/
+
+public class Merchant
+{
+private String NameObject;
+private int PriceObject;
+private int GoldPieces;
+
+}
+
+/**
+ * Constructor Merchant
+ *
+ */
+public Merchant (String NameObject, int PriceObject, int GoldPieces)
+{
+}
+
+/** Set the Name of the object
+public void setNameObject (String newNameObject)
+{
+setNameObject = newName
+}
+
+
+/** getPriceObject
+ * Get the price of the object
+ */
+
+public String getPriceObject()
+{
+    System.out.println ();
+    System.out.println ();
+    System.out.println ( );
+}

@@ -1,1 +1,24 @@
-ffffffffffffffffff
+/**
+ *  This class allows to create NPC.
+ *  A NPC is a neutral character in the game.
+ *  He doesn't attack the player.
+ *  He can't die. He is able to give quests to the player.
+ *
+ *
+ * @author  Laure Baudoin
+ * @version 14/11/18
+ */
+private List<Quest> quetes;
+public class NPC extends Actor
+{
+    /**Creates an NPC who is an actor with an empty quest list at the beginning*/
+    public void NPC()
+    {
+    }
+
+    /**Add a new quest in the Quest list of the NPC
+    return true if the quest is added*/
+    public boolean giveQuestToNPC(quest : Quest)
+    {
+    }
+}

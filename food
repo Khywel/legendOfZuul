@@ -1,0 +1,56 @@
+import java.util.*;
+/**
+ * Class Food - an Item which can be ate by the player to gain energy, mana
+ * or can poison the player and so decrease his energy.
+ * Food has a cost, a name and can be sell or not
+ * This class is part of the "Legend of Zuul" .
+ *
+ * @author  Angélique Lanneau
+ * @version 2018.11.14
+ */
+public class Food extends Item
+{
+    protected int RestauredHP;
+    protected int RestauredMana ;
+    protected int Poison;
+
+    /**
+     * Constructor of the class food.
+     *
+     * @param : Name, Cost, Salable, RestauredHP, RestauredMana, Poison
+     */
+    public Food(int RestauredHP, int RestauredMana, int Poison)
+    {
+        super();
+    }
+
+    /** setRestauredHP is a method which
+     * Set the RestauredHP attribute of the food
+     *
+     * @param newRestaured
+     */
+
+    /** getHPValue is a method which giveshow many
+     *  HP is restaured by this food.
+     */
+    public int getHPValue()
+    {
+      return RestauredHP;
+    }
+
+    /** getManaValue is a method which gives how many
+     *  Mana is restaured by this food.
+     */
+    public int getManaValue()
+    {
+      return RestauredMana;
+    }
+
+    /** getPoisonValue is a method which gives how many
+     *  HP is removed by this food.
+     */
+    public int getPoisonValue()
+    {
+      return Poison;
+    }
+}

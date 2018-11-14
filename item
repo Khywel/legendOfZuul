@@ -1,1 +1,41 @@
-eeeeeeeeeeeeeeee
+import java.util.*;
+/**
+ * Class Item -
+ * The item class is the parent class of the "Messages", "Food" and
+ * "InvisibleObject" classes. An item is an object that can be used by the
+ * player. An item is characterized by 3 attributes: a name to name the item,
+ * a price to be bought or resold to a particular npc and a boolean to know if
+ * the item can be sell.
+ * This class is part of the "Legend of Zuul" .
+ * @author  Luce AUDOUARD
+ * @version 2018.11.14
+ */
+
+public class Item {
+    private String itemName;
+    protected int price;
+    private boolean saleable;
+
+    public Item {
+        // initialisation des variables d'instance
+        itemName = this.itemName;
+        price = this.price;
+        saleable = this.saleable;
+    }
+
+    public String getItemName (){
+        return itemName;
+    }
+
+    public int getPrice (){
+        return price;
+    }
+
+    public boolean getSaleable (){
+        return saleable;
+    }
+
+    public void setPrice (int newPrice){
+        price = newPrice;
+    }
+}

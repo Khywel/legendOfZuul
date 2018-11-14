@@ -1,18 +1,25 @@
 /**
- *  This class give all the
+ *  This class give all the commun attribute between PNJ, ennemy and player
  *
  *
+ *  This class is part of the "Legend of Zuul".
  * @author  Driss
- * @version 2006.03.30
+ * @version 14.11.2018
  */
 
 public class Actor
 {
-    /**
-     *
-     */
-    public Actor() {
+    int strength = 0;
+    int mana = 0;
+    int dexterity = 0;
+    int agility = 0;
+    int intelligence = 0;
+    int charisma = 0;
+    int speed = 0;
+    String name;
 
+    public Actor(String name, ) {
 
 
     } 
+}
