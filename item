@@ -1,4 +1,7 @@
 import java.util.*;
+import java.awt.*;
+import javax.swing.*;
+
 /**
  * Class Item -
  * The item class is the parent class of the "Messages", "Food" and
@@ -15,6 +18,7 @@ public class Item {
     private String itemName;
     protected int price;
     private boolean saleable;
+    private boolean okItem;
 
     /**
      * Item constructor
@@ -27,8 +31,15 @@ public class Item {
     public Item (String itemName, int price, boolean saleable) {
         // variables initialisation
         this.itemName = itemName;
-        this.price = price;
+        if (price > 0){
+            this.price = price;
+        }
+        else {
+            System.out.println("Price error. The price is now equal to 0.");
+            this.price = 0;
+        }
         this.saleable = saleable;
+        //checkPrice(this.price);
     }
 
     /**
@@ -54,9 +65,48 @@ public class Item {
 
     /**
     * The price may vary over the game, overwrite the old price by a
-    * new price
+    * new price. The new price can not negative
     */
     public void setPrice (int newPrice){
-        price = newPrice;
+        if (newPrice > 0){
+            System.out.println("Price error, it can not be under 0");
+        }
+        else price = newPrice;
+    }
+    
+    /**public boolean checkPrice (int price){
+        JFrame myFrame;
+        JLabel labelNewPrice, labelOldPrice;
+        JTextField myJTF;
+        JButton myButton;
+        JPanel myPanel;
+        
+        myPanel = new JPanel();
+        labelNewPrice = new JLabel("Nouveau prix: ");
+        labelOldPrice = new JLabel();
+        labelOldPrice.setText("Ancien prix: "+price);
+        myJTF = new JTextField("New value");
+        myButton = new JButton("OK");
+        myFrame = new JFrame("Test");
+        
+        myFrame.setPreferredSize(new Dimension(300,120));
+        
+        myPanel.add(labelOldPrice);
+        myPanel.add(labelNewPrice);
+        myPanel.add(myJTF);
+        myPanel.add(myButton);
+        myFrame.add(myPanel);
+        centreWindow(myFrame);
+        
+        myFrame.pack();
+        myFrame.setVisible(true);
+        return true;
+    }*/
+    
+    public static void centreWindow(JFrame frame) {
+    Dimension dimension = Toolkit.getDefaultToolkit().getScreenSize();
+    int x = (int) ((dimension.getWidth() - frame.getWidth()) / 2);
+    int y = (int) ((dimension.getHeight() - frame.getHeight()) / 2);
+    frame.setLocation(x, y);
     }
 }
